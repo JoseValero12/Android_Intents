@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity2_1">
+
+    <TextView
+        android:id="@+id/textito"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="          Intents"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/primero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textito"
+        app:layout_constraintBottom_toTopOf="@+id/segundo"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="     Intents explicitos"
+            android:textColor="@color/white"
+            android:textSize="40sp"></TextView>
+
+        <Button
+            android:id="@+id/llamada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LLamadas"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/ajustes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajustes"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/camara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camara"
+            android:textSize="30sp"></Button>
+        <Button
+            android:id="@+id/Mensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mensaje"
+            android:textSize="30sp"></Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/segundo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="     Intents implicitos"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            ></TextView>
+
+        <Button
+            android:id="@+id/Facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/Google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GOOGLE"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Youtube"
+            android:textSize="30sp"></Button>
+        <Button
+            android:id="@+id/spotify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spotify"
+            android:textSize="30sp"></Button>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
